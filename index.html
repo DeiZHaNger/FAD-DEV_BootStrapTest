@@ -11,17 +11,34 @@
 
 <body>
     <h1>Container row col</h1>
-    <div class="mt-1 container">
-        <div class="row justify-content-start">
-            <div class="col-4 text-center bg-danger">Colonne 1</div>
+    <div class="mt-1 container text-center">
+        <div class="row">
+            <div class="card p-3 border-info col">Premier niveau avec 12 colonnes</div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-4 text-center bg-danger">Colonne 2</div>
-        </div>
+        <div class="row">
+            <div class="card border-info col-8">
+                <div class="row">
+                    <div class="p-3 col">Second niveau avec 8 colonnes</div>
+                </div>
 
-        <div class="row justify-content-end">
-            <div class="col-4 text-center bg-danger">Colonne 3</div>
+                <div class="row">
+                    <div class="card p-3 border-info col-4">Troisième niveau avec 4 colonnes</div>
+                    <div class="card border-info col-6">
+                        <div class="row">
+                            <div class="p-3 col">Troisième niveau avec 6 colonnes</div>
+                        </div> 
+                        
+                        <div class="row">
+                            <div class="card p-3 border-info col-3">Quatrième niveau avec 3 colonnes</div>
+                            <div class="card p-3 border-info col-5">Quatrième niveau avec 5 colonnes</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card py-2 border-info col-4">Second niveau 4 colonnes</div>
         </div>
     </div>
 
